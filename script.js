@@ -4,7 +4,7 @@ function calculateMinCost() {
     // console.log(nums, nums);
 	//const arr = arr.push();
   //console.log("arr11 ", arr);
-	arr.sort(function(a,b){return a-b;});
+	arr.sort((a,b) => a-b);
 	let res=0;
   while(arr.length > 1){
 	  
@@ -13,7 +13,7 @@ function calculateMinCost() {
 	  let second = arr.shift(); 
 	 res+=first+second;
 	  arr.push(first+second);
-	  arr.sort(function(a,b){return a-b;});
+	  arr.sort((a,b) => a-b);
 	  // console.log("arr22 ", arr); 
   }
 	document.getElementById("result").innerHTML=res;
